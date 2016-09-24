@@ -1,0 +1,17 @@
+<ion-navbar *navbar>
+  <ion-title>Rifiuti</ion-title>
+  <ion-buttons end>
+    <button (click)="openPdf()">
+      <ion-icon name="download"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content class="trashes">
+  <ion-scroll scrollX="true" scrollY="true" zoom="true">
+    <div class="trashes-wrapper">
+      <img src="data/trashes/trashes.jpg" />
+      <img src="data/trashes/trashes2.jpg" />
+    </div>
+  </ion-scroll>
+</ion-content>

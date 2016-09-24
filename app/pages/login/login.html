@@ -1,0 +1,14 @@
+<ion-navbar *navbar>
+  <ion-title>Area riservata</ion-title>
+</ion-navbar>
+
+<ion-content padding class="login">
+  <div class="inner-frame">
+    <div class="logo-wrapper">
+      <img src="assets/img/logo.png" class="login-logo" />
+    </div>
+
+    <asb-login [userLogin]="userLogin" (onLogin)="submit($event)"></asb-login>
+  </div>
+
+</ion-content>

@@ -1,0 +1,7 @@
+<ion-tabs>
+  <ion-tab [root]="postsRoot" tabTitle="Notizie" tabIcon="chatbubbles"></ion-tab>
+  <!--<ion-tab [root]="postsRoot" tabTitle="Eventi" tabIcon="pint"></ion-tab>-->
+  <ion-tab [root]="contactsRoot" tabTitle="Contatti" tabIcon="people"></ion-tab>
+  <ion-tab [root]="officesRoot" tabTitle="Uffici" tabIcon="filing"></ion-tab>
+  <ion-tab (select)="menuToggle()" tabTitle="Altro" tabIcon="menu"></ion-tab>
+</ion-tabs>

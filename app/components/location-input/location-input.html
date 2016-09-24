@@ -1,0 +1,21 @@
+<div class="location-input">
+  <ion-item>
+    <ion-label stacked>Luogo</ion-label>
+    <ion-input type="text" #locationSearch (keyup.enter)="onLocationSearch(locationSearch.value)"></ion-input>
+    <button clear item-right (click)="onLocationSearch(locationSearch.value)">
+      <ion-icon name="search"></ion-icon> Cerca
+    </button>
+  </ion-item>
+  <ion-item no-lines>
+
+    <button clear (click)="locateMe()">
+      <ion-icon name="pin"></ion-icon> Localizzami
+    </button>
+
+    <ion-icon class="fa fa-gear fa-spin icon-loading" item-right *ngIf="ui.loading"></ion-icon>
+
+  </ion-item>
+  <ion-item *ngIf="location">
+    <asb-location-view [location]="location" (onMarkerDrag)="onMarkerDrag($event)" [markerDraggable]="true"></asb-location-view>
+  </ion-item>
+</div>

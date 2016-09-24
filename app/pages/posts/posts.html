@@ -1,0 +1,12 @@
+<ion-navbar *navbar>
+  <ion-title>Notizie</ion-title>
+  <ion-buttons end [hidden]="!ui.isAuthenticated">
+    <button (click)="goToNewPost()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content class="posts">
+  <asb-post-detail [post]="post" *ngFor="#post of posts" (edit)="onEditPost($event)" [editable]="ui.isAuthenticated"></asb-post-detail>
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Contatti
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="contacts-page">
+  <ion-list>
+    <div *ngFor="#personGroup of personGroups" (click)="goToPersonGroup(personGroup.id)">
+      <ion-item-divider>{{personGroup.name}}</ion-item-divider>
+      <asb-person-li [person]="person" *ngFor="#person of personGroup.group" (click)="goToPersonDetail(person)"></asb-person-li>
+    </div>
+  </ion-list>
+</ion-content>

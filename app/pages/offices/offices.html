@@ -1,0 +1,12 @@
+<ion-navbar *navbar>
+  <ion-title>Uffici</ion-title>
+</ion-navbar>
+
+<ion-content class="offices">
+  <ion-list>
+    <div *ngFor="#officeGroup of officeGroups">
+      <ion-item-divider>{{officeGroup.name}}</ion-item-divider>
+      <asb-office-li [office]="office" *ngFor="#office of officeGroup.group" (click)="goToOfficeDetail(office)"></asb-office-li>
+    </div>
+  </ion-list>
+</ion-content>

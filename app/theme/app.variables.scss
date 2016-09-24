@@ -1,0 +1,48 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files. Setting
+// variables before Ionic's Sass will use these variables rather than
+// Ionic's default Sass variable values. App Shared Sass imports belong
+// in the app.core.scss file and not this file. Sass variables specific
+// to the mode belong in either the app.ios.scss or app.md.scss files.
+
+
+// App Shared Color Variables
+// --------------------------------------------------
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+// Both iOS and MD colors can be further customized if colors
+// are different per mode.
+@import 'globals.core';
+$brand-color: #1E46F3;
+$brand-color-dark: darken($brand-color, 20%);
+$brand-color-darker: darken($brand-color, 40%);
+$brand-color-light: lighten($brand-color, 10%);
+$brand-color-lighter: lighten($brand-color, 30%);
+$white: #FFF;
+$color-success: rgb(18, 122, 1);
+
+$colors: (
+  primary:    $brand-color,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  favorite:   #69BB7B
+);
+
+$toolbar-background: $brand-color;
+$toolbar-active-color: $white;
+$toolbar-inactive-color: $brand-color-darker;
+$toolbar-text-color: $white;
+$toolbar-md-text-color: $toolbar-text-color;
+$toolbar-md-button-color: $toolbar-text-color;
+$item-md-paragraph-text-color: #666;
+
+$menu-width: 250px;

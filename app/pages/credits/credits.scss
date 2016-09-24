@@ -1,0 +1,49 @@
+.credits {
+  position: relative;
+  @include radial-gradient(#fff, #ececec);
+  .wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    .logo-wrapper {
+      text-align: center;
+      .login-logo {
+        max-height: 150px;
+        max-width: 100%;
+      }
+    }
+    .author-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+    }
+    .wavein-wrapper {
+      text-align: center;
+      .wavein-logo {
+        max-height: 40px;
+        max-width: 100%;
+      }
+    }
+    .icon-links {
+      width: 250px;
+      font-size: 32px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .separator {
+      flex-grow: 1;
+    }
+    .separator2 {
+      flex-grow: 1.3;
+    }
+  }
+}

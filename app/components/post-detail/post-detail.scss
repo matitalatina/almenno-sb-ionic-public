@@ -1,0 +1,97 @@
+$corner-height: 56px;
+$corner-top-offset: 5px;
+$logo-bar-grade: 20px;
+$party-color: rgb(41, 43, 168);
+$animals-color: green;
+$issue-color: rgb(199, 46, 46);
+$event-color: rgb(235, 142, 33);
+$reminder-color: rgb(32, 165, 189);
+@mixin corner-color($color) {
+  .icon-corner {
+    background-color: $color;
+  }
+  &:before {
+    border-top-color: $color;
+  }
+}
+.post-detail {
+  .header-post {
+    overflow: hidden;
+    //border-bottom: solid 1px #ddd;
+    .type-corner {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 2;
+      &.party {
+        @include corner-color($party-color);
+      }
+      &.animals {
+        @include corner-color($animals-color);
+      }
+      &.issue {
+        @include corner-color($issue-color);
+      }
+      &.event {
+        @include corner-color($event-color);
+      }
+      &.reminder {
+        @include corner-color($reminder-color);
+      }
+      .icon-corner {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: right;
+        height: 100%;
+        line-height: $corner-height;
+        font-size: 40px;
+        padding: 0 10px;
+        color: white;
+        background-color: green;
+      }
+      &:before {
+        border-left: 4px solid transparent;
+        border-top-color: green;
+        border-width: $corner-height 0 0 $logo-bar-grade;
+        bottom: 0;
+        position: absolute;
+        left: -$logo-bar-grade;
+        width: 35px;
+        top: 0;
+        content: '';
+        height: 0;
+        z-index: 0;
+        border-style: solid;
+        width: 0;
+      }
+    }
+  }
+  .post-map {
+    position: relative;
+    .sebm-google-map-container {
+      width: 100%;
+      height: 170px;
+      pointer-events: none;
+    }
+    .fab-map {
+      top: calc(100% - 35px);
+      z-index: 50;
+      transform: translateZ(1px);
+      -webkit-transform: translateZ(1px);
+    }
+  }
+  .post-slide-images {
+    .slide-image {
+      img {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        max-height: 250px;
+      }
+    }
+  }
+}

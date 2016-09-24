@@ -1,0 +1,14 @@
+{
+  "ambientDependencies": {
+    "FileTransfer": "github:DefinitelyTyped/DefinitelyTyped/cordova/plugins/FileTransfer.d.ts",
+    "cordova": "registry:dt/cordova#0.0.0+20160316155526",
+    "firebase": "registry:dt/firebase#2.4.1+20160301094030",
+    "google.maps": "registry:dt/google.maps#3.20.0+20160218212342",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#f696b8c0c2d6e2a31c794a3752f68de85dce4c2b",
+    "marked": "github:DefinitelyTyped/DefinitelyTyped/marked/marked.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c",
+    "phonegap-plugin-push": "registry:dt/phonegap-plugin-push#0.0.0+20151124025020"
+  },
+  "dependencies": {
+    "moment": "github:typed-typings/npm-moment#a4075cd50e63efbedd850f654594f293ab81a385"
+  }
+}

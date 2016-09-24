@@ -1,0 +1,28 @@
+<ion-item>
+  <ion-icon name="flag" item-left></ion-icon>
+  <ion-label>Argomento</ion-label>
+  <ion-select [(ngModel)]="post.postType">
+    <ion-option value="party">Festa</ion-option>
+    <ion-option value="animals">Animali</ion-option>
+    <ion-option value="issue">Disservizio</ion-option>
+    <ion-option value="event">Evento</ion-option>
+    <ion-option value="reminder">Promemoria</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <asb-img-uploader-input (uploadComplete)="imgUploadComplete($event)" (onDeleteImg)="imgDelete($event)" [images]="post.photos"></asb-img-uploader-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Titolo</ion-label>
+  <ion-input type="text" [(ngModel)]="post.title"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label floating>Messaggio</ion-label>
+  <ion-textarea type="text" [(ngModel)]="post.message" rows="6"></ion-textarea>
+</ion-item>
+<ion-item no-lines>
+  <ion-icon name="pin" item-left></ion-icon>
+  <ion-label>Includi la posizione</ion-label>
+  <ion-toggle checked="false" #withPosition (change)="onTogglePosition(withPosition.checked)"></ion-toggle>
+</ion-item>
+<asb-location-input [location]="post.location" (locationChange)="onLocationChange($event)" *ngIf="withPosition.checked"></asb-location-input>

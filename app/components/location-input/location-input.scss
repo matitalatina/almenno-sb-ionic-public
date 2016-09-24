@@ -1,0 +1,14 @@
+.location-input {
+  position: relative;
+  .icon-loading {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .sebm-google-map-container {
+    width: 100%;
+    height: 170px;
+  }
+}

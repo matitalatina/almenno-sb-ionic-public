@@ -1,0 +1,460 @@
+{
+  "officeGroups": [{
+    "id": "uffici",
+    "name": "Uffici",
+    "group": [{
+      "id": "ufficio-anagrafe",
+      "name": "Anagrafe",
+      "phone": "+39 035 6320126",
+      "dayHours": [{
+        "day": 1,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 3,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 5,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }, {
+      "id": "ufficio-protocollo",
+      "name": "Protocollo",
+      "phone": "+39 035 6320116",
+      "dayHours": [{
+        "day": 1,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 3,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 5,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }]
+    }, {
+      "id": "ufficio-anagrafe",
+      "name": "Messo Comunale",
+      "phone": "035 6320126",
+      "dayHours": [{
+        "day": 1,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 3,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 5,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }]
+    }, {
+      "id": "ufficio-edilizia-pubblica",
+      "name": "Edilizia Pubblica",
+      "phone": "+39 035 6320112",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }, {
+      "id": "ufficio-edilizia-privata",
+      "name": "Edilizia Privata",
+      "phone": "+39 035 6320118",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }, {
+      "id": "ufficio-segreteria",
+      "name": "Segreteria",
+      "phone": "+39 035 6320121",
+      "email": "segreteria@comune.almennosanbartolomeo.bergamo.it",
+      "description": "Il Servizio Segreteria Affari Generali rappresenta il punto di coesione organizzata tra le Aree dell'Ente.\n\nIl servizio si occupa di alcune attività amministrative per lo più interne al Comune, svolge una funzione di coordinamento tra i servizi e di supporto alla dirigenza e agli organi politici.\n\nIn particolare:\n\n- Svolge attività di supporto al Segretario Comunale, agli organi politici (Sindaco, Assessori e Consiglieri Comunali) e ai servizi comunali\n- Appronta, registra e pubblica gli atti deliberativi emanati dalla Giunta e dal Consiglio Comunale e le determinazioni assunte dal Responsabile dell'Area Affari Generali\n- Fornisce informazioni in merito agli atti deliberativi\n- Organizza la funzione di accesso ai documenti amministrativi.\n\n## Dove andare ##\nGli Uffici del Servizio Segreteria sono situati al primo piano del Palazzo Comunale",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }]
+    }, {
+      "id": "ufficio-scuola",
+      "name": "Pubblica Istruzione",
+      "description": "Il servizio svolge tutte le funzioni amministrative delegate dalla legge al Comune in materia di assistenza scolastica e diritto allo studio, cura i rapporti con le istituzioni scolastiche del territorio, collabora con le scuole per le attività didattiche e predispone il Piano per il Diritto allo Studio.\n\nNell'ambito scolastico, coordina, promuove e organizza le iniziative rivolte a garantire l'effettiva attuazione del diritto allo studio attraverso:\n- la fornitura gratuita dei libri di testo per gli alunni delle scuole primarie\n- il servizio di refezione scolastica per gli alunni delle scuole primarie e secondaria di primo grado e la relativa commissione mensa  \n- il servizio di trasporto scolastico per gli alunni della scuola dell'infanzia, primaria e secondaria\n- l'erogazione di borse di studio\n- la gestione della Dote Scuola\n- l'erogazione di contributi alla scuola dell'infanzia\n\n## Dove andare ##\n\nGli Uffici del Servizio di Pubblica Istruzione sono situati al primo piano del Palazzo Comunale",
+      "phone": "+39 035 6320114",
+      "email": "scuola@comune.almennosanbartolomeo.bergamo.it",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }]
+    }, {
+      "id": "ufficio-servizi-sociali",
+      "name": "Servizi Sociali",
+      "phone": "+39 035 6320124",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }]
+    }, {
+      "id": "ufficio-ragioneria",
+      "name": "Ragioneria",
+      "phone": "+39 035 6320119",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }, {
+      "id": "ufficio-tributi",
+      "name": "Tributi",
+      "phone": "+39 035 6320145",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "16:30",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "12:30"
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }]
+  },{
+    "id": "uffici-altro",
+    "name": "Altro",
+    "group": [{
+      "id": "polizia-municipale",
+      "name": "Polizia Municipale",
+      "phone": "+39 035 6320110",
+      "dayHours": [{
+        "day": 6,
+        "hourRanges": [{
+          "from": "9:00",
+          "to": "11:45"
+        }]
+      }]
+    }, {
+      "id": "biblioteca-comunale",
+      "name": "Biblioteca Comunale",
+      "phone": "+39 035 643484",
+      "dayHours": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "14:00",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 3,
+        "hourRanges": [{
+          "from": "14:00",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "9:30",
+          "to": "13:00"
+        },{
+          "from": "14:00",
+          "to": "18:00"
+        }]
+      }, {
+        "day": 5,
+        "hourRanges": [{
+          "from": "9:30",
+          "to": "13:00"
+        },{
+          "from": "14:00",
+          "to": "18:00"
+        }]
+      }]
+    }]
+  }],
+  "personGroups": [{
+    "id": "sindaco",
+    "name": "Sindaco",
+    "group": [{
+      "id": "gb",
+      "firstName": "Gianbattista",
+      "lastName": "Brioschi",
+      "role": "Sindaco",
+      "roleSecond": "Responsabile Pubblica Sicurezza, Protezione Civile, Ecologia e Ambiente, Gestione Parchi pubblici e agricoli, Servizi di Rete, con delega per le Società Partecipate (Hidrogest, Unica Servizi, Uniacque)  P.G.T .Programmazione Governo del Territorio (Urbanistica e Edilizia Privata) Politiche Sociali, Politiche Giovanili e delega per l'Azienda Consortile.",
+      "img": "data/img/persons/gianbattista-brioschi.jpg",
+      "description": "Volevo ringraziare tutti i cittadini di Almenno che hanno riconfermato la loro fiducia nella mia persona e nella mia grande squadra, davvero un bel risultato, ben al di là delle più rosee previsioni. \"Come Amministrazione uscente siamo convinti di aver amministrato con grande impegno e disponibilità nei confronti dei nostri concittadini; nonostante i tagli dei finanziamenti da parte dello stato, in questi 5 anni abbiamo realizzato molte opere e molti servizi a favore della cittadinanza; ora l' impegno con i miei cittadini di lavorare sodo per il bene comune.  \n  \nLa squadra si è ridotta di 4 unità passando da 12 a 8 ma sono sicuro che nonostante il duro lavoro che ci aspetterà sapremo con competenza e serietà realizzare il nostro programma elettorale,\"La priorità assoluta del nostro programma è riuscire a mantenere inalterati tutti i servizi sin qui realizzati e cercare di ampliare la vasta gamma di servizi già in essere, da quelli sociali a quelli scolastici, da quelli turistici a quelli sportivi, con un occhio di riguardo alle fasce più deboli come gli anziani e i disoccupati\".  \n  \nCome per i cinque anni trascorsi nel primo mandato continuerò a fare il Sindaco a tempo pieno, anche per il secondo mandato, continuando a ricevere i cittadini tutti i giorni cercando di poter risolvere al meglio i loro problemi."
+    }]
+  }, {
+    "id": "giunta-comunale",
+    "name": "Giunta Comunale",
+    "group": [{
+      "id": "ale-frigeni",
+      "firstName": "Alessandro",
+      "lastName": "Frigeni",
+      "role": "Ass. Politiche Sportive, Servizi Telematici, Comunicazione e Marketing, Turismo e Commercio con delega sovracomunale per l'EXPO e Grande Bergamo",
+      "roleSecond": "Consigliere di Zona per Carosso",
+      "img": "data/img/persons/alessandro-frigeni.jpg",
+      "description": "",
+      "reception": [{
+        "day": 4,
+        "hourRanges": [{
+          "from": "",
+          "to": "",
+          "appointment": true
+        }]
+      }, {
+        "day": 6,
+        "hourRanges": [{
+          "from": "10:00",
+          "to": "12:00",
+          "appointment": false
+        }]
+      }]
+    }, {
+      "id": "massimo-todeschini",
+      "firstName": "Massimo",
+      "lastName": "Todeschini",
+      "role": "Ass. Pubblica Istruzione, Cultura Beni Architettonici e Culturali e Rapporti con le Associazioni, con delega speciale per i Gemellaggi Europei",
+      "roleSecond": "Consigliere di Zona per Longa",
+      "img": "data/img/persons/massimo-todeschini.png",
+      "description": "",
+      "reception": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "17:00",
+          "to": "18:30",
+          "appointment": false
+        }]
+      }, {
+        "day": 4,
+        "hourRanges": [{
+          "from": "17:00",
+          "to": "18:30",
+          "appointment": false
+        }, {
+          "day": 6,
+          "hourRanges": [{
+            "from": "10:00",
+            "to": "12:00",
+            "appointment": false
+          }]
+        }]
+      }]
+    }, {
+      "id": "daniela-pesenti",
+      "firstName": "Daniela",
+      "lastName": "Pesenti",
+      "role": "Ass. Programmazione Economica finanziaria",
+      "roleSecond": "Consigliere di Zona per Centro (Vignola, Castello Rescanzi, IV Novembre, Martiri della Libertà)",
+      "img": "data/img/persons/daniela-pesenti.png",
+      "description": "",
+      "reception": [{
+        "day": 4,
+        "hourRanges": [{
+          "from": "17:00",
+          "to": "18:30",
+          "appointment": false
+        }]
+      }]
+    }, {
+      "id": "milena-salvi",
+      "firstName": "Milena",
+      "lastName": "Salvi",
+      "role": "Ass. Lavori Pubblici, Viabilità, Patrimonio, Servizi Tecnologici e servizi Cimiteriali.",
+      "roleSecond": "Consigliere di Zona per Cascine e per Canova (Dante Alighieri, Ungaretti, Montale, Canova)",
+      "img": "data/img/persons/milena-salvi.jpg",
+      "description": "",
+      "reception": [{
+        "day": 2,
+        "hourRanges": [{
+          "from": "17:00",
+          "to": "18:30",
+          "appointment": true
+        }, {
+          "day": 6,
+          "hourRanges": [{
+            "from": "10:00",
+            "to": "12:00",
+            "appointment": false
+          }]
+        }]
+      }]
+    }, {
+      "id": "luigi-bonanomi",
+      "firstName": "Luigi",
+      "lastName": "Bonanomi",
+      "role": "Consigliere delegato in materia di Ecologia Ambiente, Gestione Parchi Pubblici e Agricoli.",
+      "roleSecond": "",
+      "img": "data/img/persons/luigi-bonanomi.jpg",
+      "description": "",
+      "reception": []
+    }, {
+      "id": "maria-rota",
+      "firstName": "Maria Ester",
+      "lastName": "Rota",
+      "role": "Consigliere delegato in materia di Politiche Sociali, Politiche Giovanili e Azienda Consortile.",
+      "roleSecond": "",
+      "img": "data/img/persons/maria-rota.jpg",
+      "description": "",
+      "reception": []
+    }, {
+      "id": "cornali-annarita",
+      "firstName": "Annarita",
+      "lastName": "Cornali",
+      "role": "Consigliere delegato in materia di pubblica istruzione, Cultura, Beni Architettonici e Culturali e Rapporti con le Associazioni e delega speciale per i Gemellaggi Europei.",
+      "roleSecond": "",
+      "img": "data/img/persons/cornali-annarita.jpg",
+      "description": "",
+      "reception": []
+    }, {
+      "id": "rota-francesco",
+      "firstName": "Francesco",
+      "lastName": "Rota",
+      "role": "Consigliere delegato in materia di Programmazione Governo del Territorio e per la Comunità Montana.",
+      "roleSecond": "",
+      "img": "data/img/persons/rota-francesco.jpg",
+      "description": "",
+      "reception": []
+    }]
+  }]
+}

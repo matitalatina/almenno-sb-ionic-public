@@ -1,0 +1,48 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+@import "mixins.scss";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/ionicons/dist/scss/ionicons";
+
+@import "../pages/contacts/contacts";
+@import "../pages/posts/posts.scss";
+@import "../pages/side-menu/side-menu.scss";
+@import "../pages/login/login.scss";
+@import "../pages/office-detail/office-detail.scss";
+@import "../pages/links/links.scss";
+@import "../pages/flag/flag.scss";
+@import "../pages/credits/credits.scss";
+@import "../pages/trashes/trashes.scss";
+@import "../pages/post-edit/post-edit.scss";
+
+@import "../components/day-hours/day-hours";
+@import "../components/post-detail/post-detail";
+@import "../components/location-input/location-input";
+@import "../components/post-form/post-form";
+@import "../components/img-uploader-input/img-uploader-input";
+
+.wrapped-text {
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.badge-list-item {
+  &.open-badge {
+    background-color: $color-success;
+  }
+  margin: 0 8px 0 0;
+  float: right;
+}
+
+ion-card {
+  //color: $item-md-paragraph-text-color;
+    li {
+      color: $item-md-paragraph-text-color;
+    }
+}

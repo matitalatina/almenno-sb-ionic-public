@@ -1,0 +1,31 @@
+<ion-card>
+  <ion-item>
+    <ion-icon class="fa fa-building" item-left large></ion-icon>
+    <h2>{{office.name}}</h2>
+  </ion-item>
+  <ion-item *ngIf="office.dayHours?.length > 0">
+    <ion-icon name="time" item-left large></ion-icon>
+    <asb-day-hours [dayHours]="office.dayHours"></asb-day-hours>
+  </ion-item>
+  <ion-card-content *ngIf="office.description" [innerHTML]="office.description | toMarkdown"></ion-card-content>
+  <ion-row no-padding>
+    <ion-col *ngIf="office.phone">
+      <a button clear small [href]="office.phone | phoneLink">
+        <ion-icon name='call'></ion-icon>
+        Chiama
+      </a>
+    </ion-col>
+    <ion-col text-center *ngIf="office.email">
+      <button clear small>
+        <ion-icon name='mail'></ion-icon>
+        Email
+      </button>
+    </ion-col>
+    <ion-col text-right>
+      <button clear small>
+        <ion-icon name='share-alt'></ion-icon>
+        Condividi
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-card>

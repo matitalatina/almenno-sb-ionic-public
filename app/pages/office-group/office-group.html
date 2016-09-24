@@ -1,0 +1,11 @@
+<ion-navbar *navbar>
+  <ion-title>{{officeGroup?.name}}</ion-title>
+</ion-navbar>
+
+<ion-content padding class="office-group">
+  <ion-list>
+    <ion-list-item *ngFor="#office of officeGroup?.group">
+      {{office.id}}
+    </ion-list-item>
+  </ion-list>
+</ion-content>

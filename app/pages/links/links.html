@@ -1,0 +1,12 @@
+<ion-navbar *navbar>
+  <ion-title>Link utili</ion-title>
+</ion-navbar>
+
+<ion-content class="links">
+  <ion-card class="advanced-background limited-height" *ngFor="#link of links" (click)="openLink(link)">
+    <img [src]="link.image"/>
+    <div class="fader"></div>
+    <p class="advanced-background-title">{{link.title}}</p>
+    <p class="advanced-background-subtitle" *ngIf="link.subtitle">{{link.subtitle}}</p>
+  </ion-card>
+</ion-content>

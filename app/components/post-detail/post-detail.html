@@ -1,0 +1,51 @@
+<ion-card class="post-detail">
+
+  <ion-item class="header-post">
+    <ion-avatar item-left>
+      <img [src]="post.user.avatar">
+    </ion-avatar>
+    <h2>{{post.user.firstName}}
+      {{post.user.lastName}}</h2>
+    <p>{{post.created | date}}</p>
+    <div class="type-corner" [ngClass]="post.postType">
+      <i class="icon-corner" [ngClass]="post.postType | postTypeIcon"></i>
+    </div>
+  </ion-item>
+
+  <ion-slides pager="true" [options]="{effect: 'coverflow'}" class="post-slide-images">
+
+    <ion-slide *ngFor="#photo of post.photos" class="slide-image">
+      <img [src]="photo">
+    </ion-slide>
+
+  </ion-slides>
+  <div class="post-map" *ngIf="post.location">
+    <sebm-google-map [latitude]="post.location.coords.lat" [longitude]="post.location.coords.lng" [zoom]="15" [disableDefaultUI]="true">
+      <sebm-google-map-marker [latitude]="post.location.coords.lat" [longitude]="post.location.coords.lng" [markerDraggable]="false"></sebm-google-map-marker>
+    </sebm-google-map>
+
+    <button fab fab-right fab-top class="fab-map" (click)="navigateTo(post.location)">
+      <ion-icon name="navigate"></ion-icon>
+    </button>
+  </div>
+
+  <ion-card-content>
+    <h2>{{post.title}}</h2>
+    <div [innerHTML]="post.message | toMarkdown"></div>
+  </ion-card-content>
+  <ion-row no-padding>
+    <ion-col *ngIf="editable">
+      <button clear small (click)="editPost(post)">
+        <ion-icon name="create"></ion-icon>
+        <div>Modifica</div>
+      </button>
+    </ion-col>
+    <ion-col text-right>
+      <button clear small (click)="sharePost(post)">
+        <ion-icon name="share-alt"></ion-icon>
+        <div>Condividi</div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>

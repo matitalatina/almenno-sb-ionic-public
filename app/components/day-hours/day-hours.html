@@ -1,0 +1,12 @@
+<ul class="asb-day-hours">
+<li *ngFor="#dh of dayHours">
+  <p>
+    <span class="day-name">{{dh?.day | toDayText}}</span>:
+    <span *ngFor="#h of dh.hourRanges; #last = last">{{h | hourRange}}
+      <span *ngIf="!last">
+        &nbsp;
+      </span>
+    </span>
+  </p>
+</li>
+</ul>

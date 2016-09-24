@@ -1,0 +1,12 @@
+<div class="img-uploader-input">
+  <button block (click)="pickNewImgs()">
+    <ion-icon name="images"></ion-icon>Aggiungi immagini</button>
+  <div class="photos-wrapper">
+    <div *ngFor="#i of images" [ngStyle]="{'background-image': 'url(' + i.src + ')'}" class="photo" (click)="showImgActions(i)">
+
+    </div>
+    <div *ngFor="#i of uploadingImages" [ngStyle]="{'background-image': 'url(' + i.src + ')'}" class="photo">
+      {{i.progress}}
+    </div>
+  </div>
+</div>

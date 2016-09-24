@@ -1,0 +1,41 @@
+<ion-card>
+  <img [src]="person.img">
+  <ion-item>
+    <ion-icon name="contact" item-left large></ion-icon>
+    <h2>{{person.title}}
+      {{person.firstName}}
+      {{person.lastName}}</h2>
+    <p class="wrapped-text">{{person.role}}</p>
+  </ion-item>
+  <ion-item *ngIf="person.roleSecond">
+    <ion-icon name="briefcase" item-left large></ion-icon>
+    <p class="wrapped-text">
+      {{person.roleSecond}}
+    </p>
+  </ion-item>
+  <ion-item *ngIf="person.reception?.length > 0">
+    <ion-icon name="time" item-left large></ion-icon>
+    <asb-day-hours [dayHours]="person.reception"></asb-day-hours>
+  </ion-item>
+  <ion-card-content *ngIf="person.description" [innerHTML]="person.description | toMarkdown"></ion-card-content>
+  <ion-row no-padding>
+    <ion-col *ngIf="person.phone">
+      <a button clear small [href]="person.phone | phoneLink">
+        <ion-icon name='call'></ion-icon>
+        Chiama
+      </a>
+    </ion-col>
+    <ion-col text-center *ngIf="person.email">
+      <button clear small>
+        <ion-icon name='mail'></ion-icon>
+        Email
+      </button>
+    </ion-col>
+    <ion-col text-right>
+      <button clear small>
+        <ion-icon name='share-alt'></ion-icon>
+        Condividi
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-card>

@@ -1,0 +1,41 @@
+<ion-menu [content]="mycontent" side="right" class="side-menu">
+  <ion-content>
+    <header class="header-side-menu">
+      <div class="header-logo"></div>
+    </header>
+    <ion-list no-lines>
+      <button ion-item (click)="openTrashes()">
+        <ion-icon name="trash" item-left></ion-icon>
+        Rifiuti
+      </button>
+      <button ion-item (click)="openLinks()">
+        <ion-icon name="link" item-left></ion-icon>
+        Link utili
+      </button>
+      <button ion-item (click)="openFlag()">
+        <ion-icon name="alert" item-left></ion-icon>
+        Segnala al comune
+      </button>
+      <button ion-item>
+        <ion-icon name="settings" item-left></ion-icon>
+        Impostazioni
+      </button>
+      <button ion-item (click)="openCredits()">
+        <ion-icon name="information-circle" item-left></ion-icon>
+        Crediti
+      </button>
+    </ion-list>
+    <ion-list no-lines class="bottom-list">
+      <button ion-item (click)="openLogin()" *ngIf="!ui.isAuthenticated">
+        <ion-icon name="log-in" item-left></ion-icon>
+        Area riservata
+      </button>
+      <button ion-item (click)="logout()" *ngIf="ui.isAuthenticated">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Logout
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="tabsRoot"></ion-nav>

@@ -1,0 +1,20 @@
+<ion-navbar *navbar>
+  <ion-title>Post</ion-title>
+  <ion-buttons end [hidden]="!post._id">
+    <button (click)="onDelete(post)">
+      <ion-icon name="trash"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content padding class="post-edit">
+  <asb-post-form [post]="post"></asb-post-form>
+  <ion-item no-lines>
+    <ion-icon name="notifications" item-left></ion-icon>
+    <ion-label>Notifica i cittadini</ion-label>
+    <ion-toggle [(ngModel)]="ui.notifyUsers"></ion-toggle>
+  </ion-item>
+  <button block primary (click)="onSave(post)">
+    <ion-icon class="fa fa-save"></ion-icon> Salva
+  </button>
+</ion-content>

@@ -1,0 +1,13 @@
+.img-uploader-input {
+  .photos-wrapper{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    .photo{
+      height: 80px;
+      width: 80px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
